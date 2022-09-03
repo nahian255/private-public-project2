@@ -288,6 +288,12 @@ const displayCultureNews = async () => {
     const findArry = data.data;
     const cardPart = document.getElementById('card-part');
     cardPart.textContent = '';
+    const noData = document.getElementById('not-found');
+    if (findArry.length === 0) {
+        noData.classList.remove('hidden	');
+    } else {
+        noData.classList.add('hidden');
+    }
     findArry.forEach(element => {
         const div = document.createElement('div');
         div.innerHTML = `
