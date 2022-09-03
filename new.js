@@ -33,7 +33,23 @@ const displayBreakingNews = async () => {
                            <img class="w-6 h-4" src="${element.author.img}" alt="Movie">
                        </div>
                        <P class="mx-9">${element.rating.number}M</p>
-                       <button class="btn btn-primary">Read More</button>
+                       <label for="my-modal" class="btn modal-button">Read more</label>
+                           <!-- Put this part before </body> tag -->
+                           <input type="checkbox" id="my-modal" class="modal-toggle" />
+                           <div class="modal">
+                             <div class="modal-box">
+                               <h3 class="font-bold text-lg">${element.title}</h3>
+                               <p class="py-4">${element.details + "..."}</p>
+                               <div class="modal-action">
+                                 <label for="my-modal" class="btn">Go Back</label>
+                               </div>
+                               <div>
+                                   <p> ${element.author.name}</p>
+                                   <img class="w-6 h-4" src="${element.author.img}" alt="Movie">
+                                   <P class="mx-9">${element.rating.number}M</p>
+
+                                   </div>
+                            </div>
                     </div>
                 </div>
             </div> `;
@@ -41,6 +57,8 @@ const displayBreakingNews = async () => {
 
     });
 }
+
+
 // Regular News.........
 const loadRegularNews = async () => {
     const res = await fetch("https://openapi.programming-hero.com/api/news/category/02")
@@ -71,7 +89,23 @@ const displayRegularNews = async () => {
                                <img class="w-6 h-4" src="${element.author.img}" alt="Movie">
                            </div>
                            <P class="mx-9">${element.rating.number}M</p>
-                           <button class="btn btn-primary">Read More</button>
+                           <label for="my-modal" class="btn modal-button">Read more</label>
+                           <!-- Put this part before </body> tag -->
+                           <input type="checkbox" id="my-modal" class="modal-toggle" />
+                           <div class="modal">
+                             <div class="modal-box">
+                               <h3 class="font-bold text-lg">${element.title}</h3>
+                               <p class="py-4">${element.details + "..."}</p>
+                               <div class="modal-action">
+                                 <label for="my-modal" class="btn">Go Back</label>
+                               </div>
+                               <div>
+                                   <p> ${element.author.name}</p>
+                                   <img class="w-6 h-4" src="${element.author.img}" alt="Movie">
+                                   <P class="mx-9">${element.rating.number}M</p>
+
+                                   </div>
+                            </div>
                         </div>
                     </div>
                 </div> `;
@@ -79,6 +113,9 @@ const displayRegularNews = async () => {
 
     });
 }
+
+
+
 // International news......
 
 const loadInternationalNews = async () => {
@@ -108,13 +145,31 @@ const displayInternationalNews = async () => {
                                <img class="w-6 h-4" src="${element.author.img}" alt="Movie">
                            </div>
                            <P class="mx-9">${element.rating.number}M</p>
-                           <button class="btn btn-primary">Read More</button>
+                           <<label for="my-modal" class="btn modal-button">Read more</label>
+                           <!-- Put this part before </body> tag -->
+                           <input type="checkbox" id="my-modal" class="modal-toggle" />
+                           <div class="modal">
+                             <div class="modal-box">
+                               <h3 class="font-bold text-lg">${element.title}</h3>
+                               <p class="py-4">${element.details + "..."}</p>
+                               <div class="modal-action">
+                                 <label for="my-modal" class="btn">Go Back</label>
+                               </div>
+                               <div>
+                                   <p> ${element.author.name}</p>
+                                   <img class="w-6 h-4" src="${element.author.img}" alt="Movie">
+                                   <P class="mx-9">${element.rating.number}M</p>
+
+                                   </div>
+                            </div>
                         </div>
                     </div>
                 </div> `;
         cardPart.appendChild(div);
     });
 }
+
+
 
 // Sports.....
 const loadSportsNews = async () => {
@@ -144,13 +199,31 @@ const displaySportsNews = async () => {
                                <img class="w-6 h-4" src="${element.author.img}" alt="Movie">
                            </div>
                            <P class="mx-9">${element.rating.number}M</p>
-                           <button class="btn btn-primary">Read More</button>
+                           <label for="my-modal" class="btn modal-button">Read more</label>
+                           <!-- Put this part before </body> tag -->
+                           <input type="checkbox" id="my-modal" class="modal-toggle" />
+                           <div class="modal">
+                             <div class="modal-box">
+                               <h3 class="font-bold text-lg">${element.title}</h3>
+                               <p class="py-4">${element.details + "..."}</p>
+                               <div class="modal-action">
+                                 <label for="my-modal" class="btn">Go Back</label>
+                               </div>
+                               <div>
+                                   <p> ${element.author.name}</p>
+                                   <img class="w-6 h-4" src="${element.author.img}" alt="Movie">
+                                   <P class="mx-9">${element.rating.number}M</p>
+
+                                   </div>
+                            </div>
                         </div>
                     </div>
                 </div> `;
         cardPart.appendChild(div);
     });
 }
+
+
 // Entertainment.........
 const loadEntertainmentNews = async () => {
     const res = await fetch("https://openapi.programming-hero.com/api/news/category/05")
@@ -178,13 +251,31 @@ const displayEntertainmentNews = async () => {
                                <img class="w-6 h-4" src="${element.author.img}" alt="Movie">
                            </div>
                            <P class="mx-9">${element.rating.number}M</p>
-                           <button class="btn btn-primary">Read More</button>
+                           <label for="my-modal" class="btn modal-button">Read more</label>
+                           <!-- Put this part before </body> tag -->
+                           <input type="checkbox" id="my-modal" class="modal-toggle" />
+                           <div class="modal">
+                             <div class="modal-box">
+                               <h3 class="font-bold text-lg">${element.title}</h3>
+                               <p class="py-4">${element.details + "..."}</p>
+                               <div class="modal-action">
+                                 <label for="my-modal" class="btn">Go Back</label>
+                               </div>
+                               <div>
+                                   <p> ${element.author.name}</p>
+                                   <img class="w-6 h-4" src="${element.author.img}" alt="Movie">
+                                   <P class="mx-9">${element.rating.number}M</p>
+
+                                   </div>
+                            </div>
                         </div>
                     </div>
                 </div> `;
         cardPart.appendChild(div);
     });
 }
+
+
 // Culture.............
 const loadCultureNews = async () => {
     const res = await fetch("https://openapi.programming-hero.com/api/news/category/06")
@@ -213,13 +304,32 @@ const displayCultureNews = async () => {
                                <img class="w-6 h-4" src="${element.author.img}" alt="Movie">
                            </div>
                            <P class="mx-9">${element.rating.number}M</p>
-                           <button class="btn btn-primary">Read More</button>
+                           <label for="my-modal" class="btn modal-button">Read more</label>
+                           <!-- Put this part before </body> tag -->
+                           <input type="checkbox" id="my-modal" class="modal-toggle" />
+                           <div class="modal">
+                             <div class="modal-box">
+                               <h3 class="font-bold text-lg">${element.title}</h3>
+                               <p class="py-4">${element.details + "..."}</p>
+                               <div class="modal-action">
+                                 <label for="my-modal" class="btn">Go Back</label>
+                               </div>
+                               <div>
+                                   <p> ${element.author.name}</p>
+                                   <img class="w-6 h-4" src="${element.author.img}" alt="Movie">
+                                   <P class="mx-9">${element.rating.number}M</p>
+
+                                   </div>
+                            </div>
+
                         </div>
                     </div>
                 </div> `;
         cardPart.appendChild(div);
     });
 }
+
+
 // Art
 const loadArtNews = async () => {
     const res = await fetch("https://openapi.programming-hero.com/api/news/category/07")
@@ -247,7 +357,24 @@ const displayArtNews = async () => {
                                <img class="w-6 h-4" src="${element.author.img}" alt="Movie">
                            </div>
                            <P class="mx-9">${element.rating.number}M</p>
-                           <button class="btn btn-primary">Read More</button>
+                           <label for="my-modal" class="btn modal-button">Read more</label>
+                           <!-- Put this part before </body> tag -->
+                           <input type="checkbox" id="my-modal" class="modal-toggle" />
+                           <div class="modal">
+                             <div class="modal-box">
+                               <h3 class="font-bold text-lg">${element.title}</h3>
+                               <p class="py-4">${element.details + "..."}</p>
+                               <div class="modal-action">
+                                 <label for="my-modal" class="btn">Go Back</label>
+                               </div>
+                               <div>
+                                   <p> ${element.author.name}</p>
+                                   <img class="w-6 h-4" src="${element.author.img}" alt="Movie">
+                                   <P class="mx-9">${element.rating.number}M</p>
+
+                                   </div>
+                            </div>
+                           </div>
                         </div>
                     </div>
                 </div> `;
