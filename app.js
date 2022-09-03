@@ -6,10 +6,10 @@ const loadNews = async () => {
     // return data;
     console.log(data.data.news_category);
 }
-loadNews()
-// const displayAll = async () => {
-//     const data = await loadNews()
-//     console.log(data)
+// loadNews()
+// // const displayAll = async () => {
+// //     const data = await loadNews()
+// //     console.log(data)
 //     // const cardPart = document.getElementById('card-part');
 //     // const div = document.createElement('div');
 //     // div.innerHTML = `
