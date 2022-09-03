@@ -28,18 +28,69 @@
                 </div>
                 <div class="flex-none">
                     <ul class="menu menu-horizontal p-0">
-                        <li><a>Item 1</a></li>
+                        <li><a>News</a></li>
                         <li tabindex="0">
                             <a>
-                                Parent
+                                Blog
                                 <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                     viewBox="0 0 24 24">
                                     <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                                 </svg>
                             </a>
                             <ul class="p-2 bg-base-100">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
+                                <li><label for="my-modal" class="btn modal-button">Question 1</label>
+                                    <input type="checkbox" id="my-modal" class="modal-toggle" />
+                                    <div class="modal">
+                                        <div class="modal-box">
+                                            <h3 class="font-bold text-lg">what is difference between var, let and const?
+                                            </h3>
+                                            <p class="py-4">var variables can be updated and re-declared within its
+                                                scope;<br> let variables can be updated but not re-declared; <br> const
+                                                variables
+                                                can neither be updated nor re-declared.
+                                            </p>
+                                            <div class="modal-action">
+                                                <label for="my-modal" class="btn">Go Back</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><label for="my-modal" class="btn modal-button">Question 2</label>
+                                    <input type="checkbox" id="my-modal" class="modal-toggle" />
+                                    <div class="modal">
+                                        <div class="modal-box">
+                                            <h3 class="font-bold text-lg">what is difference between arrow function<br>
+                                                and
+                                                normal function?
+                                            </h3>
+                                            <p class="py-4">Unlike regular functions, arrow functions do not have their
+                                                own this. <br> The value of this inside an arrow function remains the
+                                                same<br>
+                                                throughout the lifecycle of the function <br> and is always bound to the
+                                                value of this <br> in the closest non-arrow parent function.
+                                            </p>
+                                            <div class="modal-action">
+                                                <label for="my-modal" class="btn">Go Back</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><label for="my-modal" class="btn modal-button">Question 3</label>
+                                    <input type="checkbox" id="my-modal" class="modal-toggle" />
+                                    <div class="modal">
+                                        <div class="modal-box">
+                                            <h3 class="font-bold text-lg">What are template strings used for?
+                                            </h3>
+                                            <p class="py-4">Template literals (template strings) allow you to use
+                                                strings <br> or embedded expressions in the form of a string. <br> They
+                                                are
+                                                enclosed in backticks `` .<br> For example, const name = 'Jack';
+                                                console.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                         </li>
 
@@ -56,7 +107,7 @@
 
         <section class="p-8 mx-auto">
             <div class="flex justify-between p-5 mb-6">
-                <button>Home</button>
+                <button onclick="displayRegularNews() " onclick="displayRegularNews()">Home</button>
                 <button onclick="displayBreakingNews()">Breaking news</button>
                 <button onclick="displayRegularNews()">Regular news</button>
                 <button onclick="displayInternationalNews()">International news</button>
